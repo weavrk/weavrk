@@ -37,3 +37,10 @@ for (let i = 0; i < elements2.length; i++) {
 }
 
 
+//modal in sandbox-NEVERMIND, JUST OPEN IN NEW TAB
+
+// let windowFeatures = "popup left=100,top=100,width=320,height=320"
+// const popOutS1 = document.getElementById("popOutS1")
+// popOutS1.addEventListener('click', () => {
+//   window.open("https://www.weavrk.com/whatsfordinner")
+// })

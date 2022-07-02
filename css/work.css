@@ -1,3 +1,22 @@
+/* colors:
+text(black):   color: #323535;
+background (white): background-color: #fafafa;
+background (yellow): background-color: #fed452
+
+ACCENT COLORS
+accent-teal (footer/nav): #aeeeef
+accent-yellow (home): #fdda5c;
+accent-bluegrey (work): #eaf1f1
+accent-blue (sandbox): 
+accent-blue (about): #4bc8d2
+
+BOX SHADOW
+box-shadow:  rgb(216, 216, 216);
+background-color: rgb(207, 240, 240);
+ */
+
+
+
 html {
   font-size: 12.5px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -223,6 +242,14 @@ p {
   margin: 0 15px;
 }
 
+.leadin_work {
+  margin-bottom: 20vw;
+  font-size: 1.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  max-width: 85vw;
+  margin-left: 30px;
+}
+
 .image-gallery_shell {
   width: calc(100vw);
   display: grid;
@@ -302,10 +329,6 @@ p {
 /* ----------------------------------------------------------------- */
 /* ---------------------------- sandbox page -------------------------- */
 /* ----------------------------------------------------------------- */
-.flex {
-  display: flex;
-}
-
 .development-playground_shell {
   padding: 12vh 30px;
   margin-bottom: 100px;
@@ -313,13 +336,7 @@ p {
 
 .dev-project {
   margin-bottom: 10vh;
-  height: 100vh;
-}
-
-.play-frame {
-  height: 80vh;
-  width: 100%;
-  margin-top: 1vh;
+  height: 800px;
 }
 
 .leadin_copy {
@@ -329,46 +346,142 @@ p {
   height: 200px;
 }
 
+.accent-sandbox {
+  color: #e946ab;
+}
+
 .sandbox-links {
   color: #323535;
-  display: block;
   margin-left: 10px;
 }
 
 .sandbox-links2 {
   color: #323535;
+}
+
+.popout {
+  width: 20px;
   display: block;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
-.sandbox-project-introduction {
-  font-size: 1rem;
+.dev-project-frame {
+  width: 85%;
+  margin-top: 45px;
+  display: flex;
 }
 
-iframe {
+.sandbox-projects {
   border: none;
   box-shadow: 0px 1px 50px 1px rgb(232, 232, 232);
+  width: 100%;
   height: 600px;
 }
 
 /* ----------------------------------------------------------------- */
 /* ---------------------------- about page -------------------------- */
 /* ----------------------------------------------------------------- */
+.flex {
+  display: flex;
+}
 
+.about-leadin-shell {
+  width: 50vw;
+  max-height: 50vw;
+}
 
-.photo {
-  background-image: url(/images/photo/Weaver_Katherine_030421-19.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 400px;
+.leadin_about {
+  max-width: 35vw;
+  padding-right: 50px;
+  margin-bottom: 15px;
+  font-size: 1.35rem;
+  line-height: 1.65rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 1vw;
 }
 
 .resume {
   color: #323535;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .95rem;
+  margin-bottom: 12vw;
+}
+
+.photo {
+  background-image: url(/images/photo/Weaver_Katherine_030421-33.jpg);
+  opacity: .95;
+  background-position-y: -19vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 30vw;
+  margin-left: auto;
+}
+
+.blue-line {
+  height: 10px;
+  width: 40px;
+  margin: 30px 0;
+  background-color: #27bdbe;
+}
+
+.about-resume-shell {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 35% 30% 30%;
+  column-gap: 45px;
+  margin-bottom: 100px;
+}
+
+.resume-group {
   margin-top: 30px;
 }
 
+.resume-section-header {
+  font-size: 1.25rem;
+}
+
+.resume-header {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  font-weight: 400;
+  color: #27bdbe;
+  margin-bottom: 30px;
+}
+
+.resume-copy {
+  font-size: .85rem;
+  font-weight: 300;
+}
+
+.mdm {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: -20px;
+}
+
+.resume-bullets {
+  font-size: .85rem;
+}
+
+li {
+  list-style-type: none;
+  position: relative;
+  left: -1rem;
+}
+
+li::before {
+  content: '\2022';
+  position: absolute;
+  top: -.125rem;
+  left: -1rem;
+  font-size: 1.1em;
+}
 
 /* ----------------------------------------------------------------- */
 /* ---------------------------  footer  ---------------------------- */
@@ -509,7 +622,8 @@ iframe {
   }
 
   #portfolio {
-    padding: 30vh 5vw;
+    margin-top: 10vh;
+    padding: 5vw 5vw 30vh 5vw;
   }
 
   .image-gallery_shell {
@@ -521,6 +635,14 @@ iframe {
   .leadin_copy {
     max-width: 700px;
     margin-bottom: 10vh;
+  }
+
+  .leadin_work {
+    margin-bottom: 10vw;
+    font-size: 1.5rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    max-width: 55vw;
+    margin-left: 0;
   }
 }
 
